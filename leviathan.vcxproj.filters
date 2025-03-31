@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\song.cpp" />
-    <ClCompile Include="src\editor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\4klang\4klang.h" />
@@ -12,31 +10,14 @@
     <ClInclude Include="src\glext.h">
       <Filter>ext</Filter>
     </ClInclude>
-    <ClInclude Include="src\fp.h">
-      <Filter>ext</Filter>
-    </ClInclude>
-    <ClInclude Include="src\song.h" />
+    <ClInclude Include="src\music.h" />
     <ClInclude Include="src\editor.h" />
+    <ClInclude Include="src\render.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\shaders\post.inl">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="src\shaders\fragment.inl">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="src\shaders\fragment.frag">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="src\shaders\post.frag">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="src\shaders\texture.frag">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="src\shaders\texture.inl">
-      <Filter>shaders</Filter>
-    </None>
+    <None Include="src\shaders\post.frag" />
+    <None Include="src\shaders\music.comp" />
+    <None Include="src\shaders\render.comp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ext">
